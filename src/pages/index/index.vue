@@ -1,29 +1,29 @@
 <template>
   <div class="container">
 
-    <div class="index-show" @click="bindViewTap">
-      <img class="index-img" src="./index.jpg" background-size="contain" />
+    <div class="index-show">
+      <img @click="goPage" class="index-img" src="./index.jpg" background-size="contain" />
     </div>
 
     <div class="card-title">业务办理</div>
 
     <div class="index-nav">
-      <div class="index-nav-item">
+      <a href="/pages/complain/main" class="index-nav-item">
         <img class="index-nav-item-img" src="./index-item-1.png">
         <div class="index-nav-item-text">在线投诉</div>
-      </div>
-      <div class="index-nav-item">
+      </a>
+      <a href="/pages/apply/main" class="index-nav-item">
         <img class="index-nav-item-img" src="./index-item-2.png">
         <div class="index-nav-item-text">申请调解</div>
-      </div>
-      <div class="index-nav-item">
+      </a>
+      <a href="/pages/myCase/main" class="index-nav-item">
         <img class="index-nav-item-img" src="./index-item-3.png">
         <div class="index-nav-item-text">我的案件</div>
-      </div>
-      <div class="index-nav-item">
+      </a>
+      <a href="/pages/simulate/main" class="index-nav-item">
         <img class="index-nav-item-img" src="./index-item-4.png">
         <div class="index-nav-item-text">模拟理赔</div>
-      </div>
+      </a>
     </div>
 
     <div class="serve">
@@ -47,21 +47,13 @@
 </template>
 
 <script>
-import card from '@/components/card'
 
 export default {
   data () {
     return {}
   },
 
-  components: {
-    card
-  },
   methods: {
-    bindViewTap () {
-      const url = '../logs/main'
-      wx.navigateTo({ url })
-    },
     getUserInfo () {
       // 调用登录接口
       wx.login({
@@ -73,18 +65,15 @@ export default {
           })
         }
       })
+    },
+    goPage () {
+      const url = '../counter/main'
+      wx.navigateTo({ url })
     }
   },
   created () {
     // 调用应用实例的方法获取全局数据
     this.getUserInfo()
-    wx.getLocation({
-      type: 'wgs84',
-      success: (res) => {
-        this.latitude = res.latitude // 经度
-        this.longitude = res.longitude // 纬度
-      }
-    })
   }
 }
 </script>
@@ -125,6 +114,7 @@ export default {
   justify-content: space-around;
 }
 .index-nav-item{
+  display: block;
   width: 150rpx;
   height: 150rpx;
   border: 1px solid #D7D7D7;

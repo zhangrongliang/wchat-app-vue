@@ -6,7 +6,7 @@
       <button @click="decrement">-</button>
     </p>
 
-    <a href="/pages/index/main" class="home">去往首页</a>
+    <a @click="navigateBack" class="home">返回</a>
   </div>
 </template>
 
@@ -26,7 +26,23 @@ export default {
     },
     decrement () {
       store.commit('decrement')
+    },
+    navigateBack () {
+      wx.navigateBack()
     }
+  },
+  created () {
+    // 获取经纬度
+    // wx.getLocation({
+    //   type: 'wgs84',
+    //   success: (res) => {
+    //     this.latitude = res.latitude // 经度
+    //     this.longitude = res.longitude // 纬度
+    //   }
+    // })
+    // 跳转路径
+    // const url = '../counter/main'
+    //   wx.navigateTo({ url })
   }
 }
 </script>
