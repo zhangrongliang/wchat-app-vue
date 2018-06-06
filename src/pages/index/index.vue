@@ -118,7 +118,7 @@ export default {
   display: block;
   width: 150rpx;
   height: 150rpx;
-  border: 1px solid #D7D7D7;
+  border: 1px solid @borderColor;
   border-radius: 10rpx;
 }
 .index-nav-item-img{
@@ -144,7 +144,7 @@ export default {
 .serve-nav-item{
   width: 326rpx;
   height: 162rpx;
-  border: 1px solid #D7D7D7;
+  border: 1px solid @borderColor;
   border-radius: 10rpx;
   display: flex;
   align-items:center;
