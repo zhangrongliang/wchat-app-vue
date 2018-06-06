@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <view>
     <ul class="container log-list">
       <li v-for="(log, index) in logs" :class="{ red: aa }" :key="index" class="log-item">
         {{ index + 1 + '.' + log }}
       </li>
     </ul>
-  </div>
+  </view>
 </template>
 
 <script>

@@ -1,8 +1,8 @@
 <template>
   <!-- 模拟理赔 -->
-  <div>
+  <view>
     模拟理赔
-  </div>
+  </view>
 </template>
 
 <script>

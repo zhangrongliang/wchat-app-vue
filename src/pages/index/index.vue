@@ -1,49 +1,49 @@
 <template>
-  <div class="container">
+  <view class="container">
 
-    <div class="index-show">
+    <view class="index-show">
       <img @click="goPage" class="index-img" src="./index.jpg" background-size="contain" />
-    </div>
+    </view>
 
-    <div class="card-title">业务办理</div>
+    <view class="card-title">业务办理</view>
 
-    <div class="index-nav">
+    <view class="index-nav">
       <a href="/pages/complain/main" class="index-nav-item">
         <img class="index-nav-item-img" src="./index-item-1.png">
-        <div class="index-nav-item-text">在线投诉</div>
+        <view class="index-nav-item-text">在线投诉</view>
       </a>
       <a href="/pages/apply/main" class="index-nav-item">
         <img class="index-nav-item-img" src="./index-item-2.png">
-        <div class="index-nav-item-text">申请调解</div>
+        <view class="index-nav-item-text">申请调解</view>
       </a>
       <a href="/pages/myCase/main" class="index-nav-item">
         <img class="index-nav-item-img" src="./index-item-3.png">
-        <div class="index-nav-item-text">我的案件</div>
+        <view class="index-nav-item-text">我的案件</view>
       </a>
       <a href="/pages/simulate/main" class="index-nav-item">
         <img class="index-nav-item-img" src="./index-item-4.png">
-        <div class="index-nav-item-text">模拟理赔</div>
+        <view class="index-nav-item-text">模拟理赔</view>
       </a>
-    </div>
+    </view>
 
-    <div class="serve">
-      <div class="card-title">服务指南</div>
-      <div class="serve-nav">
-        <div class="serve-nav-item">
+    <view class="serve">
+      <view class="card-title">服务指南</view>
+      <view class="serve-nav">
+        <view class="serve-nav-item">
           <img class="serve-nav-item-img-1" src="./serve-item-11.jpg">
           <img class="serve-nav-item-img-2" src="./serve-item-1.png">
-          <div class="serve-nav-item-text">了解投诉处理流程</div>
-        </div>
-        <div class="serve-nav-item">
+          <view class="serve-nav-item-text">了解投诉处理流程</view>
+        </view>
+        <view class="serve-nav-item">
           <img class="serve-nav-item-img-1" src="./serve-item-22.jpg">
           <img class="serve-nav-item-img-2" src="./serve-item-2.png">
-          <div class="serve-nav-item-text">了解案件调解流程</div>
-        </div>
-      </div>
+          <view class="serve-nav-item-text">了解案件调解流程</view>
+        </view>
+      </view>
 
-    </div>
+    </view>
 
-  </div>
+  </view>
 </template>
 
 <script>
@@ -78,12 +78,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
+@import '../../less/color.less';
 .index-show {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(#0BA6AB, #fff);
+  background: linear-gradient(@baseColor, @whiteColor);
   padding: 80rpx 0 48rpx;
 }
 
@@ -105,7 +106,7 @@ export default {
   top: 5rpx;
   width: 12rpx;
   height: 30rpx;
-  background: #0BA6AB;
+  background: @baseColor;
 }
 
 .index-nav{
@@ -132,7 +133,7 @@ export default {
 }
 
 .serve{
-  border-top: 20rpx solid #f6f6f6;
+  border-top: 20rpx solid @backColorGray;
   padding:  36rpx 0;
 }
 .serve-nav{

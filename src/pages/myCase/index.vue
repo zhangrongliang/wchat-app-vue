@@ -1,8 +1,8 @@
 <template>
   <!-- 我的案件 -->
-  <div>
+  <view>
     我的案件
-  </div>
+  </view>
 </template>
 
 <script>

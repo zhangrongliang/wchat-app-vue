@@ -1,5 +1,5 @@
 <template>
-  <div class="counter-warp">
+  <view class="counter-warp">
     <p>Vuex counter：{{ count }}</p>
     <p>
       <button @click="increment">+</button>
@@ -7,7 +7,7 @@
     </p>
 
     <a @click="navigateBack" class="home">返回</a>
-  </div>
+  </view>
 </template>
 
 <script>

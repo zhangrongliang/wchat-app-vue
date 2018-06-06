@@ -1,8 +1,8 @@
 <template>
   <!-- 申请调解 -->
-  <div>
+  <view>
     申请调解
-  </div>
+  </view>
 </template>
 
 <script>
