@@ -1,0 +1,127 @@
+@import './color.less';
+
+.placeholder-color{
+  color: #eee;
+}
+.border-bottom-none {
+  border-bottom:none !important;
+}
+
+// 为了form-item 高度一致，重置input高度
+input{
+  height: 36rpx;
+  min-height: 36rpx;
+}
+
+/* radio */
+radio{
+  height: 36rpx;
+  min-height: 36rpx;
+  // scale:2D 缩放转换。
+  transform:scale(0.75);
+}
+.form-input-same{
+  position: absolute;
+  right:26rpx;
+  top:-5rpx;
+  color: @baseColor;
+  z-index: 2;
+}
+
+// switch
+.form-switch{
+  // scale:2D 缩放转换。
+  transform:scale(0.6);
+  position: absolute;
+  top: -16rpx;
+  z-index: 2;
+}
+
+// textarea
+textarea{
+  width: 100% !important;
+}
+
+.form{
+  padding-left:34rpx;
+  font-family: PingFangSC-Regular;
+  letter-spacing: 0;
+  line-height: 36rpx;
+  border-bottom: 20rpx solid @backColorGray;
+}
+.form-item{
+  border-bottom: 1px solid #eee;
+  padding: 30rpx 0 34rpx;
+  display: flex;
+}
+.form-label{
+  width: 300rpx;
+  font-size: 26rpx;
+  color: #686868;
+}
+.form-input{
+  width:100%;
+  font-size: 28rpx;
+  color: @blackColor;
+  position: relative;
+  z-index: 1;
+}
+// 向右箭头
+@rigthIconSize: 33rpx;
+.form-select-right-icon:after{
+  content:" ";
+  position: absolute;
+  right: 36rpx;
+  top: 5rpx;
+  width: @rigthIconSize;
+  height: @rigthIconSize;
+  background: url("../images/icon-right.jpg") no-repeat center;
+  background-size: @rigthIconSize;
+}
+
+// 上传img
+.update-img{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+@uploadSize: 120rpx;
+.update-img-item{
+  width: @uploadSize;
+  height: @uploadSize;
+  border: 1px solid #eee;
+  display: flex;
+  align-items:center;
+  margin: 10rpx;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.update-img-icon{
+   display: block;
+   width: 36rpx;
+   height: 32rpx;
+   margin: auto;
+}
+// 显示图片
+.update-img-max{
+  max-width: 100%;
+  max-height: 100%;
+}
+// 删除图片
+.cancel-img-icon{
+  position: absolute;
+  top: 5rpx;
+  right: 5rpx;
+  z-index: 2;
+}
+
+// 底部按钮
+.tap-button {
+  font-size: 30rpx;
+  color: #FFFFFF;
+  border-radius: 0;
+  background: @baseColor !important;
+  height: 100rpx;
+  line-height: 100rpx;
+}

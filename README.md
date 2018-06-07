@@ -1,6 +1,7 @@
-# my-wxapp
+# jiutiao-wxapp
 
-> A Mpvue project
+> 四川保协纠调小程序
+>> 关键字：vue,less,components.
 
 ## Build Setup
 

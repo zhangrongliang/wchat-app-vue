@@ -1,7 +1,7 @@
 {
-  "name": "my-wxapp",
+  "name": "jiutiao-wxapp",
   "version": "1.0.0",
-  "description": "A Mpvue project",
+  "description": "四川保协纠调小程序",
   "author": "zhangrongliang <zhangrongliang@aliyun.com>",
   "private": true,
   "scripts": {

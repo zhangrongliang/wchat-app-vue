@@ -2,26 +2,26 @@
   <view class="container">
 
     <view class="index-show">
-      <img @click="goPage" class="index-img" src="./index.jpg" background-size="contain" />
+      <img @click="goPage" class="index-img" src="../../images/index.jpg" background-size="contain" />
     </view>
 
     <view class="card-title">业务办理</view>
 
     <view class="index-nav">
       <a href="/pages/complain/main" class="index-nav-item">
-        <img class="index-nav-item-img" src="./index-item-1.png">
+        <img class="index-nav-item-img" src="../../images/index-item-1.png">
         <view class="index-nav-item-text">在线投诉</view>
       </a>
       <a href="/pages/apply/main" class="index-nav-item">
-        <img class="index-nav-item-img" src="./index-item-2.png">
+        <img class="index-nav-item-img" src="../../images/index-item-2.png">
         <view class="index-nav-item-text">申请调解</view>
       </a>
       <a href="/pages/myCase/main" class="index-nav-item">
-        <img class="index-nav-item-img" src="./index-item-3.png">
+        <img class="index-nav-item-img" src="../../images/index-item-3.png">
         <view class="index-nav-item-text">我的案件</view>
       </a>
       <a href="/pages/simulate/main" class="index-nav-item">
-        <img class="index-nav-item-img" src="./index-item-4.png">
+        <img class="index-nav-item-img" src="../../images/index-item-4.png">
         <view class="index-nav-item-text">模拟理赔</view>
       </a>
     </view>
@@ -30,13 +30,13 @@
       <view class="card-title">服务指南</view>
       <view class="serve-nav">
         <view class="serve-nav-item">
-          <img class="serve-nav-item-img-1" src="./serve-item-11.jpg">
-          <img class="serve-nav-item-img-2" src="./serve-item-1.png">
+          <img class="serve-nav-item-img-1" src="../../images/serve-item-11.jpg">
+          <img class="serve-nav-item-img-2" src="../../images/serve-item-1.png">
           <view class="serve-nav-item-text">了解投诉处理流程</view>
         </view>
         <view class="serve-nav-item">
-          <img class="serve-nav-item-img-1" src="./serve-item-22.jpg">
-          <img class="serve-nav-item-img-2" src="./serve-item-2.png">
+          <img class="serve-nav-item-img-1" src="../../images/serve-item-22.jpg">
+          <img class="serve-nav-item-img-2" src="../../images/serve-item-2.png">
           <view class="serve-nav-item-text">了解案件调解流程</view>
         </view>
       </view>
@@ -67,7 +67,7 @@ export default {
       })
     },
     goPage () {
-      const url = '../counter/main'
+      const url = '../counter-demo/main'
       wx.navigateTo({ url })
     }
   },
@@ -80,6 +80,8 @@ export default {
 
 <style scoped lang="less">
 @import '../../less/color.less';
+
+// 头部渐变
 .index-show {
   display: flex;
   flex-direction: column;
@@ -94,6 +96,7 @@ export default {
   border-radius: 35rpx;
 }
 
+// title
 .card-title{
   position: relative;
   padding: 0 60rpx;
@@ -109,6 +112,7 @@ export default {
   background: @baseColor;
 }
 
+// 业务班级
 .index-nav{
   display: flex;
   padding: 40rpx 15rpx 48rpx;
@@ -132,6 +136,7 @@ export default {
   text-align: center;
 }
 
+// 服务指南
 .serve{
   border-top: 20rpx solid @backColorGray;
   padding:  36rpx 0;
