@@ -124,7 +124,7 @@
       </view>
 
       <!-- 案件材料 -->
-      <upload-img :form="form"></upload-img>
+      <upload-img :form="form" :upload="true"></upload-img>
 
       <button @click="handleSubmit('申请调解')" class="tap-button" type="primary" :loading="loading"> 申请调解 </button>
 

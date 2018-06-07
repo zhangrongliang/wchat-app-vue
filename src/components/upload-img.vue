@@ -7,9 +7,9 @@
         <view class="update-img">
            <view @click="previewImage(val, form.updateData)" class="update-img-item" v-for="(val, key) in form.updateData" :key="key">
              <img  class="update-img-max" :src="val" >
-             <icon @click.stop="cancelImage(key)" class="cancel-img-icon" type="cancel" size="20"/>
+             <icon @click.stop="cancelImage(key)" v-if="upload" class="cancel-img-icon" type="cancel" size="20"/>
            </view>
-           <view @click="chooseImage" class="update-img-item">
+           <view @click="chooseImage" class="update-img-item" v-if="upload && form.updateData && form.updateData.length < uploadMax">
              <img  class="update-img-icon" src="../images/icon-pat.jpg" >
            </view>
         </view>
@@ -21,7 +21,24 @@
 <script>
 let _this = null
 export default {
-  props: ['form'],
+  props: {
+    form: {
+      type: Object,
+      default: {
+        updateData: []
+      }
+    },
+    // 默认为图片预览，true：可上传，删除图片。
+    upload: {
+      type: Boolean,
+      default: false
+    },
+    // 上传图片默认最大数为50
+    uploadMax: {
+      type: Number,
+      default: 50
+    }
+  },
   methods: {
     // 上传图片
     chooseImage () {
