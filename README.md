@@ -3,6 +3,12 @@
 > 四川保协纠调小程序
 >> 关键字：vue,less,components.
 
+## 预览
+
+![首页](https://usails-public.cdn.usails.cn/wxapp1.png)
+
+![申请纠调](https://usails-public.cdn.usails.cn/wxapp2.png)
+
 ## Build Setup
 
 ``` bash
