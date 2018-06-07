@@ -208,9 +208,6 @@ export default {
   onReady () {
     _this = this
     this.loading = false
-    wx.setNavigationBarTitle({
-      title: '在线投诉-' + _this.form.type[_this.form.typeIndex]
-    })
     // 重置数据
     for (let item in this.form) {
       switch (typeof this.form[item]) {
@@ -228,6 +225,10 @@ export default {
           break
       }
     }
+    // set nav title
+    wx.setNavigationBarTitle({
+      title: '在线投诉-' + _this.form.type[_this.form.typeIndex]
+    })
   }
 }
 </script>
