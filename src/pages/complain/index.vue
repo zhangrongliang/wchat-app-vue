@@ -152,7 +152,9 @@ export default {
         // 地址，三级联动数据
         region: [],
         // images
-        updateData: []
+        updateData: [],
+        // images file
+        updateDataFiles: []
       },
       loading: false
     }
