@@ -126,7 +126,7 @@
       <!-- 案件材料 -->
       <upload-img :form="form" :upload="true"></upload-img>
 
-      <button @click="handleSubmit('申请调解')" class="tap-button" type="primary" :loading="loading"> 申请调解 </button>
+      <button @click="handleSubmit('提交诉求')" class="tap-button" type="primary" :loading="loading"> 提交诉求 </button>
 
   </view>
 </template>
@@ -164,6 +164,7 @@ export default {
   },
   watch: {
     'form.typeIndex' (val, oldVal) {
+      _this.form.typeIndex = Number(val)
       wx.setNavigationBarTitle({
         title: '在线投诉-' + _this.form.type[_this.form.typeIndex]
       })
@@ -227,6 +228,7 @@ export default {
           break
       }
     }
+    console.log(this.form)
     // set nav title
     wx.setNavigationBarTitle({
       title: '在线投诉-' + _this.form.type[_this.form.typeIndex]

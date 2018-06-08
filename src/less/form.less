@@ -1,7 +1,7 @@
 @import './color.less';
 
 .placeholder-color{
-  color: #eee;
+  color: @borderColor;
 }
 .border-bottom-none {
   border-bottom:none !important;
@@ -50,14 +50,14 @@ textarea{
   border-bottom: 20rpx solid @backColorGray;
 }
 .form-item{
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid @borderColor;
   padding: 30rpx 0 34rpx;
   display: flex;
 }
 .form-label{
   width: 300rpx;
   font-size: 26rpx;
-  color: #686868;
+  color: @lableColor;
 }
 .form-input{
   width:100%;
@@ -89,7 +89,7 @@ textarea{
 .update-img-item{
   width: @uploadSize;
   height: @uploadSize;
-  border: 1px solid #eee;
+  border: 1px solid @borderColor;
   display: flex;
   align-items:center;
   margin: 10rpx;
@@ -119,9 +119,13 @@ textarea{
 // 底部按钮
 .tap-button {
   font-size: 30rpx;
-  color: #FFFFFF;
+  color: @whiteColor;
   border-radius: 0;
   background: @baseColor !important;
   height: 100rpx;
   line-height: 100rpx;
+  border: none !important;
+}
+.tap-button-disabled{
+  background: fade(@baseColor, 50%) !important;
 }
