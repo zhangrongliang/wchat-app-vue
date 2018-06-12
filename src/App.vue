@@ -10,10 +10,3 @@ export default {
   }
 }
 </script>
-<style >
-  .container{
-    font-family: PingFangSC-Regular;
-    font-size: 26rpx;
-    color: #000000;
-  }
-</style>

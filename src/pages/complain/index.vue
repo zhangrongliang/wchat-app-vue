@@ -1,6 +1,6 @@
 <template>
   <!-- 在线投诉 -->
-  <view>
+  <view class="font-base">
 
       <view class="form">
         <view class="form-item">
@@ -228,7 +228,6 @@ export default {
           break
       }
     }
-    console.log(this.form)
     // set nav title
     wx.setNavigationBarTitle({
       title: '在线投诉-' + _this.form.type[_this.form.typeIndex]

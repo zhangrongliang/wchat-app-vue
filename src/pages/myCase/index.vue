@@ -49,5 +49,78 @@ export default {
 
 
 <style scoped lang="less">
-@import '../../less/my-case-list.less';
+@import '../../less/base.less';
+
+.my-case {
+  background-color: @backColorGray;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: @blackColor;
+  letter-spacing: 0;
+}
+
+.case-list {
+  background-color: @whiteColor;
+  margin-top: 32rpx;
+}
+
+.case-title {
+  padding: 32rpx 0 22rpx 32rpx;
+  border-bottom: 1px solid @borderColor;
+}
+
+.case-content {
+  font-size: 26rpx;
+  padding: 20rpx 0;
+}
+
+.case-msg {
+  color: @colorA4;
+  padding: 10rpx 72rpx;
+  position: relative;
+  .text-ellipsis;
+}
+
+.case-msg:before {
+  position: absolute;
+  content: ' ';
+  left: 32rpx;
+  top: 15rpx;
+  width: 20rpx;
+  height: 20rpx;
+  border: 1px solid #9B9B9B;
+  border-radius: 50%;
+}
+
+.case-msg-before-active:before {
+  border: 1px solid @baseColor !important;
+  .background-fade(@baseColor, 40%);
+}
+
+.case-msg-active {
+  color: @baseColor;
+}
+// 操作
+
+.case-operation {
+  border-top: 1px solid @borderColor;
+  .text-right;
+  padding: 20rpx 32rpx;
+}
+
+.case-button {
+  display: inline-block;
+  width: 180rpx;
+  height: 72rpx;
+  background-color: @baseColor;
+  line-height: 72rpx;
+  font-size: 26rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  .text-center;
+}
+
 </style>

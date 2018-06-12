@@ -1,6 +1,6 @@
 <template>
   <!-- 申请调解 -->
-  <view>
+  <view class="font-base">
 
       <view class="form">
         <view class="form-item">

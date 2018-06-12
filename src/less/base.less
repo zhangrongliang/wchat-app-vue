@@ -1,0 +1,87 @@
+@import "./color.less";
+/**
+ * 文本
+ */
+/*base*/
+.font-base{
+  font-family: PingFangSC-Regular;
+  letter-spacing: 0;
+  font-size: 26rpx;
+  line-height: 36rpx;
+  color: @blackColor;
+}
+/*文本定位*/
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+/*行内强制换行，亚洲风格*/
+.word-break {
+  word-break: break-word !important;
+}
+/*单行内容换行*/
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.padding0 {
+  padding: 0;
+}
+
+.margin0 {
+  margin: 0;
+}
+/**
+ * color
+ */
+.base-color {
+  color: @baseColor;
+}
+.black-color {
+  color: @blackColor;
+}
+
+.info-color {
+  color: @infoColor;
+}
+
+.success-color {
+  color: @successColor;
+}
+
+.warning-color {
+  color: @warningColor;
+}
+
+.error-color {
+  color: @errorColor;
+}
+
+/**
+ * mixins
+ */
+/*多行内容换行,默认值3*/
+.text-ellipsis-mixins(@number: 3) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @number;
+  overflow: hidden;
+}
+/*图像[scale:2D 缩放转换]*/
+.transform-scale(@number: 1){
+  transform:scale(@number);
+}
+
+/*背景颜色透明度*/
+.background-fade(@color: @baseColor, @number: 50%){
+  background: fade(@color, @number) !important;
+}

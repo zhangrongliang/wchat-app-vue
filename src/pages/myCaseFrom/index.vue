@@ -1,7 +1,12 @@
 <template>
   <!-- 我的案件-form -->
-  <view>
-
+  <view class="font-base">
+      <view class="form-plan">
+        <view class="plan-list" :class="{'plan-list-active': item.type,'plan-list-before': item.type, 'plan-list-none': (key + 1) == plan.length}" v-for="(item, key) in plan" :key="key">
+          <view class="plan-lable" :class="{'black-color': item.type}">{{ item.name }}</view>
+          <view class="plan-date">{{ item.date }}</view>
+        </view>
+      </view>
       <view class="form">
         <view class="form-item">
           <view class="form-label">案件类型</view>
@@ -98,6 +103,38 @@ let _this = null
 export default {
   data () {
     return {
+      plan: [
+        {
+          name: '投诉已提交',
+          date: '2018-04-14 13:00',
+          type: true
+        },
+        {
+          name: '投诉处理中心受理',
+          date: '2018-04-14 13:00',
+          type: true
+        },
+        {
+          name: '补全投诉资料',
+          date: '2018-04-14 13:00',
+          type: true
+        },
+        {
+          name: '案件转涉案公司处理',
+          date: '2018-04-14 13:00',
+          type: false
+        },
+        {
+          name: '协商处理',
+          date: '2018-04-14 13:00',
+          type: false
+        },
+        {
+          name: '结案',
+          date: '2018-04-14 13:00',
+          type: false
+        }
+      ],
       form: {
         type: ['财险', '寿险'],
         typeIndex: 0,
@@ -159,4 +196,51 @@ export default {
 
 <style scoped lang="less">
 @import '../../less/form.less';
+// form-plan
+.form-plan{
+  border-bottom: 20rpx solid @backColorGray;
+  padding: 40rpx 120rpx;
+}
+.plan-list{
+  padding-bottom: 40rpx;
+  position: relative;
+  color: #9B9B9B;
+}
+.plan-list:before{
+  content: " ";
+  position: absolute;
+  left: -70rpx;
+  top: 0;
+  width: 32rpx;
+  height: 32rpx;
+  background-color: #D0D0D0;
+  border-radius: 50%;
+  border: 4rpx solid @whiteColor;
+  z-index: 2;
+}
+.plan-list-active:before{
+  background-color: @baseColor;
+}
+.plan-list:after{
+  content: " ";
+  position: absolute;
+  left: -53rpx;
+  top: 0;
+  width: 2rpx;
+  height: 100%;
+  background-color: #D0D0D0;
+  z-index: 1;
+}
+.plan-list-active:after{
+  background-color: @baseColor;
+}
+.plan-list-none:after{
+  display: none;
+}
+.plan-lable{
+  font-size: 28rpx;
+}
+.plan-date{
+  font-size: 20rpx;
+}
 </style>

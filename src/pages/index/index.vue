@@ -1,5 +1,5 @@
 <template>
-  <view class="container">
+  <view class="font-base">
 
     <view class="index-show">
       <img @click="goPage" class="index-img" src="../../images/index.jpg" background-size="contain" />
@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style scoped lang="less">
-@import '../../less/color.less';
+@import '../../less/base.less';
 
 // 头部渐变
 .index-show {
