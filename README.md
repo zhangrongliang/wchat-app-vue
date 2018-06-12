@@ -2,6 +2,7 @@
 
 > 四川保协纠调小程序
 >> 关键字：vue,less,components.
+>> 微信小程序上传目前只支持img、video
 
 ## 预览
 
