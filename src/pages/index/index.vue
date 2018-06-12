@@ -67,8 +67,8 @@ export default {
       })
     },
     goPage () {
-      const url = '../counter-demo/main'
-      wx.navigateTo({ url })
+      // const url = '../counter-demo/main'
+      // wx.navigateTo({ url })
     }
   },
   created () {

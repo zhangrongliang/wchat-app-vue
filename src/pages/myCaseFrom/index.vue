@@ -183,9 +183,10 @@ export default {
       }, 1000)
     }
   },
-  onReady () {
+  onLoad (option) {
     _this = this
     this.loading = false
+    _this.form.typeIndex = Number(option.index)
     // set nav title
     wx.setNavigationBarTitle({
       title: '我的案件-' + _this.form.type[_this.form.typeIndex]

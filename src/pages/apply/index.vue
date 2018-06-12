@@ -208,7 +208,7 @@ export default {
       }, 1000)
     }
   },
-  onReady () {
+  onLoad () {
     _this = this
     this.loading = false
     // 重置数据

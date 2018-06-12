@@ -11,7 +11,7 @@
         <view class="case-msg">资料是否齐全：否</view>
       </view>
       <view class="case-operation">
-        <a href="/pages/myCaseFrom/main" class="case-button">上传资料</a>
+        <navigator url="/pages/myCaseFrom/main?id=1&index=0" class="case-button">上传资料</navigator>
       </view>
     </view>
     <!-- list -->
@@ -34,7 +34,7 @@
         <view class="case-msg">资料是否齐全：否</view>
       </view>
       <view class="case-operation">
-        <a href="/pages/myCaseFrom/main" class="case-button">上传资料</a>
+        <navigator url="/pages/myCaseFrom/main?id=1&index=1" class="case-button">上传资料</navigator>
       </view>
     </view>
   </view>
