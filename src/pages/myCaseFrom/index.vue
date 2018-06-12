@@ -4,7 +4,7 @@
       <view class="form-plan">
         <view class="plan-list" :class="{'plan-list-active': item.type,'plan-list-before': item.type, 'plan-list-none': (key + 1) == plan.length}" v-for="(item, key) in plan" :key="key">
           <view class="plan-lable" :class="{'black-color': item.type}">{{ item.name }}</view>
-          <view class="plan-date">{{ item.date }}</view>
+          <view class="plan-date">{{ item.date.length == 0 ? '&nbsp;' : item.date }}</view>
         </view>
       </view>
       <view class="form">
@@ -121,17 +121,17 @@ export default {
         },
         {
           name: '案件转涉案公司处理',
-          date: '2018-04-14 13:00',
+          date: '',
           type: false
         },
         {
           name: '协商处理',
-          date: '2018-04-14 13:00',
+          date: '',
           type: false
         },
         {
           name: '结案',
-          date: '2018-04-14 13:00',
+          date: '',
           type: false
         }
       ],
