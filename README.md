@@ -6,6 +6,18 @@
 
 >> 微信小程序上传目前只支持img、video
 
+## code
+
+``` javascript
+
+import API from '../../API/index.js'
+
+Vue.http = Vue.prototype.$http = API
+
+this.$http
+
+```
+
 ## 预览
 
 ![申请纠调](https://usails-public.cdn.usails.cn/wxapp2.png)
