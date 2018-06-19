@@ -1,11 +1,8 @@
 # wchat-app-vue-template
 
 ### 个人喜欢原生，文件分类很清晰 
-
-
->> 关键字：vue,less,components。
-
->> 微信小程序上传目前只支持img、video
+1. 关键字：vue,less,components。
+2. 微信小程序上传目前只支持img、video
 
 ## code
 
