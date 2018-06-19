@@ -1,12 +1,12 @@
-# jiutiao-wxapp
+# wchat-app-vue-template
 
-> 四川保协纠调小程序
->> 关键字：vue,less,components.
+## 个人喜欢原生，文件分类很清晰
+
+>> 关键字：vue,less,components.\
+
 >> 微信小程序上传目前只支持img、video
 
 ## 预览
-
-![首页](https://usails-public.cdn.usails.cn/wxapp1.png)
 
 ![申请纠调](https://usails-public.cdn.usails.cn/wxapp2.png)
 

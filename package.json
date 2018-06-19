@@ -1,7 +1,7 @@
 {
-  "name": "jiutiao-wxapp",
+  "name": "wchat-app-vue-template",
   "version": "1.0.0",
-  "description": "四川保协纠调小程序",
+  "description": "wchat-app-vue-template",
   "author": "zhangrongliang <zhangrongliang@aliyun.com>",
   "private": true,
   "scripts": {

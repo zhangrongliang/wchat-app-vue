@@ -9,8 +9,8 @@
 	},
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
-	"appid": "wx9121d232dbdc63e5",
-	"projectname": "my-wxapp",
+	"appid": "",
+	"projectname": "",
 	"condition": {
 		"search": {
 			"current": -1,
