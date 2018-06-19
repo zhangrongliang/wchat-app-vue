@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "wchat-app-vue-template",
   "author": "zhangrongliang <zhangrongliang@aliyun.com>",
+  "api": {
+    "dev": "http://10.100.200.111:8080",
+    "build": "http://jiutiao.test"
+  },
   "private": true,
   "scripts": {
     "dev": "node build/dev-server.js",
